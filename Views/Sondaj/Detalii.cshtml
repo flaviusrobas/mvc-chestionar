@@ -1,0 +1,32 @@
+﻿@model WebAppChestionar.Models.Sondaj
+
+@{
+    ViewData["Title"] = "Detalii";
+}
+
+<h1 style="color: darkblue">Detalii</h1>
+<hr />
+<div>
+    <h4 style="color: darkgreen">Sondaj</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @* @Html.DisplayNameFor(model => model.Intrebari) *@
+            Întrebare
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Intrebari)   
+        </dd>
+        <dt class="col-sm-2">
+            @* @Html.DisplayNameFor(model => model.Raspunsuri) *@
+            Răspuns
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Raspunsuri)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Editare" asp-route-id="@Model?.Id">Editează</a> |
+    <a asp-action="Index">Înapoi la lista de întrebări</a>
+</div>

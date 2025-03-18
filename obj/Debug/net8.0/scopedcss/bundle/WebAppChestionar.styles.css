@@ -1,0 +1,58 @@
+/* _content/WebAppChestionar/Views/Shared/_Layout.cshtml.rz.scp.css */
+/* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand[b-tzhep0k61y] {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+a[b-tzhep0k61y] {
+  color: #0077cc;
+}
+
+.btn-primary[b-tzhep0k61y] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active[b-tzhep0k61y], .nav-pills .show > .nav-link[b-tzhep0k61y] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.border-top[b-tzhep0k61y] {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom[b-tzhep0k61y] {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow[b-tzhep0k61y] {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy[b-tzhep0k61y] {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+.footer[b-tzhep0k61y] {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;
+}
+
+.harta[b-tzhep0k61y] {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
