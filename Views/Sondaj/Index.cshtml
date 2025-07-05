@@ -1,0 +1,39 @@
+﻿@model IEnumerable<WebAppChestionar.Models.Sondaj>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1 style="color: darkgreen">Sondaj</h1>
+<hr />
+<p>
+    <a asp-action="Adaugare">Formulează o întrebare nouă</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @* @Html.DisplayNameFor(model => model.Intrebari) *@
+                Lista de întrebări
+            </th>
+
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Intrebari)
+                </td>
+
+                <td>
+                    <a asp-action="Editare" asp-route-id="@item.Id">Editează</a> |
+                    <a asp-action="Detalii" asp-route-id="@item.Id">Detalii</a> |
+                    <a asp-action="Stergere" asp-route-id="@item.Id">Șterge</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,41 @@
+﻿@model WebAppChestionar.Models.Sondaj
+
+@{
+    ViewData["Title"] = "Editare";
+}
+
+<h1 style="color: darkblue">Editare</h1>
+<hr />
+<h4 style="color: darkgreen">Sondaj</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Editare">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="Intrebari" class="control-label">Întrebare</label>
+                <input asp-for="Intrebari" class="form-control" />
+                <span asp-validation-for="Intrebari" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Raspunsuri" class="control-label">Răspuns</label>
+                <input asp-for="Raspunsuri" class="form-control" />
+                <span asp-validation-for="Raspunsuri" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Salvare modificare" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Înapoi la lista de întrebări</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

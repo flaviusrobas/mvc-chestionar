@@ -1,0 +1,28 @@
+﻿<h4 style="color: darkblue">Caută o întrebare din listă</h4>
+<hr />
+<h4 style="color: darkgreen">Sondaj</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Cautare">
+            <div class="form-group">
+                <label for="CautaText" class="control-label">Text de cautat</label>
+                <input name="CautaText" class="form-control" placeholder="introdu primele 3 litere(ex. Rom, Fra, Ang) pentru țări"/>
+                
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Caută" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Înapoi la lista de întrebări</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
